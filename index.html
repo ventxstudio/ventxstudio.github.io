@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ventx Studio</title>
+<meta name="description" content="Ventx Studio makes mobile games. Our first game is Rot Pop, a zombie match-3 puzzle game.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  :root {
+    --bg: #101214;
+    --card: #1a1d21;
+    --line: #2b3036;
+    --text: #e8eaed;
+    --muted: #9aa3ad;
+    --green: #8fd14f;
+    --orange: #ef8a3c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 24px; }
+  .logo { display: block; width: min(320px, 80%); height: auto; margin: 0 auto 8px; }
+  .lead { text-align: center; color: var(--muted); margin: 0 0 40px; }
+  .game {
+    display: flex; gap: 20px; align-items: center;
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px;
+  }
+  .game img { width: 112px; height: 112px; border-radius: 22px; flex: none; }
+  .game h2 { margin: 0 0 4px; font-size: 26px; color: var(--green); }
+  .game p { margin: 0 0 8px; }
+  .soon { color: var(--orange); font-weight: 600; }
+  footer {
+    max-width: 720px; margin: 0 auto; padding: 24px 16px 40px;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; text-align: center;
+  }
+  footer a { color: var(--text); }
+  @media (max-width: 480px) {
+    .game { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="ventx_logo.webp" width="480" height="455" alt="Ventx Studio">
+  <p class="lead">Ventx Studio makes mobile games.</p>
+
+  <section class="game">
+    <img src="rot_pop_icon.webp" width="256" height="256" alt="Rot Pop icon">
+    <div>
+      <h2>Rot Pop</h2>
+      <p>A zombie match-3 puzzle game. Swap rotten pieces, set off specials and beat the bosses
+        across 90 levels.</p>
+      <p class="soon">Coming soon to Google Play and the App Store.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <a href="privacy.html">Privacy policy</a><br>
+  © 2026 Ventx Studio
+</footer>
+</body>
+</html>
